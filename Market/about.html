@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CapitalPlus</title>
+    <style>
+        body {
+            background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        .top {
+            display: inline-flex;
+            justify-content: space-between;
+            margin: 20px;
+            text-align: center;
+            background-color: #fff;
+            border: none;
+            border-radius: 30px;
+        }
+
+        .top img{
+            border-radius: 20px;
+            margin-left: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .top p {
+            font-size: 34px;
+            margin: 20px;
+            margin-top: 100px;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+
+        h1 span {
+            color: aqua;
+        }
+
+        p {
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            margin: 50px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0f2e5d;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-links li {
+            margin-right: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+        
+        .auth-buttons {
+            display: flex;
+        }
+        
+        .auth-buttons .btn {
+            margin-left: 10px;
+            padding: 8px 16px;
+            background-color: #fff;
+            color: #0f2e5d;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .auth-buttons .btn:hover {
+            background-color: #00c3fe;
+            color: #fff;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+        
+        .dropdown button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 20px;
+            margin: 5px;
+        }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .dropdown-content a {
+            background-color: #29539b;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #fff;
+            color: #00c3fe;
+          }
+        
+          .dropdown2 {
+            position: relative;
+            display: inline-block;
+          }
+        
+        .dropdown2 button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 20px;
+            margin: 5px;
+        }
+          
+          .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown2:hover .dropdown-content2 {
+            display: block;
+          }
+          
+          .dropdown-content2 a {
+            background-color: #29539b;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content2 a:hover {
+            background-color: #fff;
+            color: #00c3fe;
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">CapitalPlus</a></div>
+            <ul class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Markets</button>
+                    <div class="dropdown-content">
+                      <a href="Registration.html">Crypto</a>
+                      <a href="Registration.html">Options</a>
+                      <a href="Registration.html">Forex</a>
+                      <a href="Registration.html">Indices</a>
+                      <a href="Registration.html">Commodities</a>
+                      <a href="Registration.html">ETFs</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Trading</button>
+                    <div class="dropdown-content2">
+                      <a href="#">Premium Services</a>
+                      <a href="#">Fees & Charges</a>
+                      <a href="#">ESG</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Company</button>
+                    <div class="dropdown-content2">
+                      <a href="about.html">About Us</a>
+                      <a href="#">Investor Relations</a>
+                      <a href="#">Cookies and Privacy</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Education</button>
+                    <div class="dropdown-content2">
+                      <a href="#">Trading Academy</a>
+                      <a href="#">News</a>
+                      <a href="#">Economic Calendar</a>
+                      <a href="#">Alerts</a>
+                      <a href="#">Risk Management</a>
+                    </div>
+                  </div>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn" id="btn">Sign Up</button>
+                <button class="btn" id="btn">Login</button>
+            </div>
+        </nav>
+    </header>
+    <div class="top">
+        <img src="team.jpg" alt="TeamPic">
+        <p>We are building the Markets – a more fair, accessible, efficient, and transparent financial system enabled by
+            US. Today, we offer a trusted and easy-to-use platform for accessing the broader economy.</p>
+    </div>
+    <hr>
+    <h1>Our Commitment to <span>Compliance</span></h1>
+    <p>A strong compliance foundation is critical to our mission of being the most trusted trading platform*. To this
+        end, we have developed a Compliance Program that is rooted in best practices from traditional financial services
+        as well as innovative, sophisticated compliance technology to bring the market industry forward. We hold a high
+        standard for what assets we list, what services we provide, and who has access to our products. Check out the
+        links below to learn more about our commitment to compliance and the technology we use to keep the economy safe.
+    </p>
+</body>
+
+</html>

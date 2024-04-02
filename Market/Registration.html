@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+</head>
+<style>
+    header {
+        background-color: #0f2e5d;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0f2e5d;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-links li {
+        margin-right: 20px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .auth-buttons {
+        display: flex;
+    }
+    
+    .auth-buttons .btn {
+        margin-left: 10px;
+        padding: 8px 16px;
+        background-color: #fff;
+        color: #0f2e5d;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .auth-buttons .btn:hover {
+        background-color: #00c3fe;
+        color: #fff;
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+    
+    .dropdown button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 20px;
+        margin: 5px;
+    }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        background-color: #29539b;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #fff;
+        color: #00c3fe;
+      }
+    
+      .dropdown2 {
+        position: relative;
+        display: inline-block;
+      }
+    
+    .dropdown2 button {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 20px;
+        margin: 5px;
+    }
+      
+      .dropdown-content2 {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown2:hover .dropdown-content2 {
+        display: block;
+      }
+      
+      .dropdown-content2 a {
+        background-color: #29539b;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content2 a:hover {
+        background-color: #fff;
+        color: #00c3fe;
+      }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .toggle {
+        border: none;
+        
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">CapitalPlus</a></div>
+            <ul class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Markets</button>
+                    <div class="dropdown-content">
+                        <a href="Registration.html">Crypto</a>
+                        <a href="Registration.html">Options</a>
+                        <a href="Registration.html">Forex</a>
+                        <a href="Registration.html">Indices</a>
+                        <a href="Registration.html">Commodities</a>
+                        <a href="Registration.html">ETFs</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Trading</button>
+                    <div class="dropdown-content2">
+                      <a href="#">Premium Services</a>
+                      <a href="#">Fees & Charges</a>
+                      <a href="#">ESG</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Company</button>
+                    <div class="dropdown-content2">
+                      <a href="about.html">About Us</a>
+                      <a href="#">Investor Relations</a>
+                      <a href="#">Cookies and Privacy</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Education</button>
+                    <div class="dropdown-content2">
+                      <a href="#">Trading Academy</a>
+                      <a href="#">News</a>
+                      <a href="#">Economic Calendar</a>
+                      <a href="#">Alerts</a>
+                      <a href="#">Risk Management</a>
+                    </div>
+                  </div>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn" id="btn">Sign Up</button>
+                <button class="btn" id="btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="loginForm" action="/php/login.php" method="POST">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                <p class="error" id="loginError"></p>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup-form" style="display: none;">
+            <h2>Signup</h2>
+            <form id="signupForm" action="/php/signup.php" method="POST">
+              <div class="form-group">
+                <label for="signupUsername">Username</label>
+                <input type="text" id="signupUsername" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="password" required>
+              </div>
+              <div class="form-group">
+                <label for="signupPhone">Phone Number</label>
+                <input type="text" id="signupPhone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="signupCountry">Country</label>
+                <input type="text" id="signupCountry" name="country" required>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn">Signup</button>
+              </div>
+              <p class="error" id="signupError"></p>
+            </form>
+        </div>
+
+        <!-- Toggle between Login and Signup -->
+        <div class="toggle">
+            <button onclick="toggleForm('login-form')">Login</button>
+            <button onclick="toggleForm('signup-form')">Signup</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Login and Signup Page
+        function toggleForm(formId) {
+            var forms = document.querySelectorAll('.container > div');
+            forms.forEach(function (form) {
+                if (form.id === formId) {
+                    form.style.display = 'block';
+                } else {
+                    form.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            window.location.href = "Registration.html";
+        });
+    </script>
+
+</body>
+
+</html>

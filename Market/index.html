@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapitalPlus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">CapitalPlus</a></div>
+            <ul class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Markets</button>
+                    <div class="dropdown-content">
+                      <a href="Registration.html">Crypto</a>
+                      <a href="Registration.html">Options</a>
+                      <a href="Registration.html">Forex</a>
+                      <a href="Registration.html">Indices</a>
+                      <a href="Registration.html">Commodities</a>
+                      <a href="Registration.html">ETFs</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Trading</button>
+                    <div class="dropdown-content2">
+                      <a href="#">Premium Services</a>
+                      <a href="#">Fees & Charges</a>
+                      <a href="#">ESG</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Company</button>
+                    <div class="dropdown-content2">
+                      <a href="about.html">About Us</a>
+                      <a href="#">Investor Relations</a>
+                      <a href="#">Cookies and Privacy</a>
+                    </div>
+                  </div>
+                  <div class="dropdown2">
+                    <button class="dropbtn2">Education</button>
+                    <div class="dropdown-content2">
+                      <a href="#">Trading Academy</a>
+                      <a href="#">News</a>
+                      <a href="#">Economic Calendar</a>
+                      <a href="#">Alerts</a>
+                      <a href="#">Risk Management</a>
+                    </div>
+                  </div>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn" id="btn">Sign Up</button>
+                <button class="btn" id="btn">Login</button>
+            </div>
+        </nav>
+    </header>
+    <video src="Market Loop Background Video - High Resolution.mp4" autoplay loop muted></video>
+    <div class="maincont">
+        <div class="txt">
+            <h1>IT'S TRADING</h1>
+            <span>WITH A PLUS</span>
+        </div>
+    </div>
+
+    <div class="buttons-container">
+        <button class="btn" id="headbtn">Try Free Demo</button>
+        <button class="btn" id="headbtn2">Start Trading Now</button>
+    </div>
+
+    <hr>
+    <main>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                    {
+                        "width": "550",
+                            "height": "550",
+                                "symbolsGroups": [
+                                    {
+                                        "name": "Indices",
+                                        "originalName": "Indices",
+                                        "symbols": [
+                                            {
+                                                "name": "FOREXCOM:SPXUSD",
+                                                "displayName": "S&P 500 Index"
+                                            },
+                                            {
+                                                "name": "FOREXCOM:NSXUSD",
+                                                "displayName": "US 100 Cash CFD"
+                                            },
+                                            {
+                                                "name": "FOREXCOM:DJI",
+                                                "displayName": "Dow Jones Industrial Average Index"
+                                            },
+                                            {
+                                                "name": "INDEX:NKY",
+                                                "displayName": "Nikkei 225"
+                                            },
+                                            {
+                                                "name": "INDEX:DEU40",
+                                                "displayName": "DAX Index"
+                                            },
+                                            {
+                                                "name": "FOREXCOM:UKXGBP",
+                                                "displayName": "FTSE 100 Index"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Commodities",
+                                        "originalName": "Futures",
+                                        "symbols": [
+                                            {
+                                                "name": "CME_MINI:ES1!",
+                                                "displayName": "S&P 500"
+                                            },
+                                            {
+                                                "name": "CME:6E1!",
+                                                "displayName": "Euro"
+                                            },
+                                            {
+                                                "name": "COMEX:GC1!",
+                                                "displayName": "Gold"
+                                            },
+                                            {
+                                                "name": "NYMEX:CL1!",
+                                                "displayName": "WTI Crude Oil"
+                                            },
+                                            {
+                                                "name": "NYMEX:NG1!",
+                                                "displayName": "Gas"
+                                            },
+                                            {
+                                                "name": "CBOT:ZC1!",
+                                                "displayName": "Corn"
+                                            },
+                                            {
+                                                "name": "MCX:SILVER1!"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Forex",
+                                        "originalName": "Forex",
+                                        "symbols": [
+                                            {
+                                                "name": "FX:EURUSD",
+                                                "displayName": "EUR to USD"
+                                            },
+                                            {
+                                                "name": "FX:GBPUSD",
+                                                "displayName": "GBP to USD"
+                                            },
+                                            {
+                                                "name": "FX:USDJPY",
+                                                "displayName": "USD to JPY"
+                                            },
+                                            {
+                                                "name": "FX:USDCHF",
+                                                "displayName": "USD to CHF"
+                                            },
+                                            {
+                                                "name": "FX:AUDUSD",
+                                                "displayName": "AUD to USD"
+                                            },
+                                            {
+                                                "name": "FX:USDCAD",
+                                                "displayName": "USD to CAD"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Crypto",
+                                        "symbols": [
+                                            {
+                                                "name": "COINBASE:BTCUSD"
+                                            },
+                                            {
+                                                "name": "COINBASE:ETHUSD"
+                                            },
+                                            {
+                                                "name": "COINBASE:LTCUSD"
+                                            },
+                                            {
+                                                "name": "COINBASE:SOLUSD"
+                                            },
+                                            {
+                                                "name": "CRYPTOCAP:USDT.D"
+                                            },
+                                            {
+                                                "name": "BINANCE:SHIBUSDT"
+                                            },
+                                            {
+                                                "name": "BINANCE:DOGEUSD"
+                                            },
+                                            {
+                                                "name": "BINANCE:BNBUSDT.P"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Stocks",
+                                        "symbols": [
+                                            {
+                                                "name": "NASDAQ:TSLA"
+                                            },
+                                            {
+                                                "name": "NASDAQ:AAPL"
+                                            },
+                                            {
+                                                "name": "NASDAQ:NVDA"
+                                            },
+                                            {
+                                                "name": "NASDAQ:AMD"
+                                            },
+                                            {
+                                                "name": "NASDAQ:MSFT"
+                                            },
+                                            {
+                                                "name": "NASDAQ:AMZN"
+                                            },
+                                            {
+                                                "name": "NASDAQ:META"
+                                            },
+                                            {
+                                                "name": "NASDAQ:GOOGL"
+                                            },
+                                            {
+                                                "name": "NASDAQ:NFLX"
+                                            },
+                                            {
+                                                "name": "NASDAQ:PYPL"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                    "showSymbolLogo": true,
+                                        "isTransparent": false,
+                                            "colorTheme": "dark",
+                                                "locale": "en",
+                                                    "backgroundColor": "#131722"
+                    }
+                </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <div class="marketxt">
+            <h2>A world of opportunities with <span>
+                    <h1>GLOBAL MARKETS</h1>
+                </span></h2>
+            <p>Discover thousands of CFDs on the world’s most popular financial
+                instruments and get free real-time quotes to explore endless trading
+                opportunities.
+            </p>
+        </div>
+    </main>
+
+
+    <div class="whyus">
+        <h1 class="whytxt">WHY <span>US</span>?</h1>
+        <div class="graphs">
+            <div class="secure">
+                <h1>Protected & secure</h1>
+                <p>Your data is safe and your funds are kept in
+                    segregated bank accounts, in accordance
+                    with regulatory requirements.</p>
+                <img src="images/icon-secure.svg">
+            </div>
+            <div class="support">
+                <h1>Professional Support</h1>
+                <p>Get around-the-clock dedicated customer
+                    service in multiple languages.</p>
+                <img src="images/icon-support.svg">
+            </div>
+            <div class="regulated">
+                <h1>Regulated</h1>
+                <p>Licensed and regulated by a variety of global leading regulators.</p>
+                <img src="images/icon-regulated.svg" alt="">
+            </div>
+            <div class="reliable">
+                <h1>Reliable</h1>
+                <p>CapitalPlus Ltd is a FTSE 250 company listed on
+                    the London Stock Exchange’s Main Market for
+                    Listed Companies</p>
+                <img src="images/icon-reliable.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Remember that CFDs are a leveraged product and can result in the loss of your entire capital. Trading CFDs
+            may not be suitable for you. Please ensure you fully understand the risks involved.
+
+            CapitalPlus is mainly compensated for its services through the Bid/Ask spread. Check our Fees & Charges.
+
+            CapitalPlus is a trademark of Capital Ltd.
+
+            The S&P 500, Dow Jones Industrial Average and S&P/ASX 200 Indices are products of S&P Dow Jones Indices LLC
+            (“SPDJI”) and/or its licensors. S&P 500®, USA 500, USA 30 are trademarks of Standard & Poor’s Financial
+            Services LLC (“S&P”); Dow Jones® is a trademark of Dow Jones Trademark Holdings LLC (“Dow Jones”). ASX® is a
+            trademark of the Australian Securities Exchange. Plus500 products are not sponsored, endorsed, sold or
+            promoted by SPDJI, Dow Jones, ASX or their affiliates and none makes any representation about investing in
+            such product(s) or has any liability for any errors, omissions, or interruptions of the indices</p>
+
+        <p>Copyright &copy CapitalPlus. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            window.location.href = "Registration.html";
+        });
+    </script>
+    <script>
+        document.getElementById("headbtn").addEventListener("click", function() {
+            window.location.href = "Registration.html";
+        });
+    </script>
+    <script>
+        document.getElementById("headbtn2").addEventListener("click", function() {
+            window.location.href = "Registration.html";
+        });
+    </script>
+</body>
+
+</html>
